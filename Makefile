@@ -2,7 +2,10 @@ VERSION = 0.0.1
 
 .PHONY: doc test tgz test2
 
-tgz:
+clean:
+	rm -rf htmlcov .coverage *.tgz __pycache__ .pytest_cache
+
+tgz: doc
 	git archive --format=tar.gz -o porkie-$(VERSION).tgz --prefix=porkie-$(VERSION)/ master
 
 doc:
