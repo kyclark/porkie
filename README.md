@@ -22,6 +22,10 @@ ello-hay
 
 To execute the test suite, run `make test` or `pytest -v test.py`.
 
+# Alternate
+
+There is also a version `pig2.py` that has the test written inside the program. Run `make test2` to run that test. Otherwise, the output of the two programs is identical.
+
 # Author
 
 Ken Youens-Clark <kyclark@email.arizona.edu>
