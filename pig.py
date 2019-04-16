@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Author : kyclark
+Author : Ken Youens-Clark <kyclark@gmail.com>
 Date   : 2019-04-10
 Purpose: Pig Latin
 """
@@ -13,6 +13,8 @@ import sys
 
 # --------------------------------------------------
 def main():
+    """Make a jazz noise here"""
+
     args = sys.argv[1:]
 
     if len(args) != 1:
@@ -30,4 +32,5 @@ def main():
 
 
 # --------------------------------------------------
-main()
+if __name__ == '__main__':
+    main()

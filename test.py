@@ -5,12 +5,20 @@ from subprocess import getoutput, getstatusoutput
 
 prg = './pig.py'
 
+
+# --------------------------------------------------
 def test_usage():
+    """Test no args for usage"""
+
     rv, out = getstatusoutput('{}'.format(prg))
     assert rv > 0
     assert re.match('usage', out, re.IGNORECASE)
 
+
+# --------------------------------------------------
 def test_runs():
+    """Tests for pig"""
+
     tests = [
         ('mouse', 'ouse-may'),
         ('apple', 'apple-ay'),

@@ -13,7 +13,8 @@ import sys
 
 # --------------------------------------------------
 def main():
-    """Start here"""
+    """Make a jazz noise here"""
+
     args = sys.argv[1:]
 
     if len(args) != 1:
@@ -26,6 +27,7 @@ def main():
 # --------------------------------------------------
 def pig(word):
     """Create a Pig Latin version of a word"""
+
     consonants = re.sub('[aeiouAEIOU]', '', string.ascii_letters)
     match = re.match('^([' + consonants + ']+)(.+)', word)
 
@@ -38,6 +40,7 @@ def pig(word):
 # --------------------------------------------------
 def test_pig():
     """Tests for the `pig` function"""
+
     tests = [
         ('mouse', 'ouse-may'),
         ('apple', 'apple-ay'),
